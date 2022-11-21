@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 10%, rgb(255, 245, 245) 70%);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.container .container-left {
+  padding: 60px 0px 0px 190px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.container .container-left h1 {
+  color: hsl(0deg, 6%, 24%);
+  font-size: 50px;
+  margin-top: 160px;
+  line-height: 55px;
+  max-width: 100px;
+  letter-spacing: 18px;
+}
+.container .container-left h1 span {
+  color: hsl(0deg, 27%, 73%);
+  font-weight: 300;
+}
+.container .container-left p {
+  color: hsl(0deg, 20%, 67%);
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 25px;
+  max-width: 437px;
+  margin-bottom: 20px;
+}
+.container .container-left .container-input {
+  position: relative;
+}
+.container .container-left .container-input input {
+  background: transparent;
+  border: 1px solid hsl(0deg, 27%, 73%);
+  border-radius: 30px;
+  padding: 15px;
+  width: 100%;
+}
+.container .container-left .container-input input:focus {
+  outline: none;
+}
+.container .container-left .container-input input::-moz-placeholder {
+  color: hsla(0deg, 52%, 83%, 0.785);
+}
+.container .container-left .container-input input:-ms-input-placeholder {
+  color: hsla(0deg, 52%, 83%, 0.785);
+}
+.container .container-left .container-input input::placeholder {
+  color: hsla(0deg, 52%, 83%, 0.785);
+}
+.container .container-left .container-input form .error {
+  color: rgb(238, 140, 140);
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 15px;
+  display: none;
+}
+.container .container-left .container-input form .icon-error {
+  align-items: center;
+  background-color: rgb(238, 89, 89);
+  border-radius: 50%;
+  color: #fff;
+  display: none;
+  font-size: 20px;
+  justify-content: center;
+  height: 21px;
+  padding: 5px;
+  width: 21px;
+  position: absolute;
+  right: 105px;
+  top: 11px;
+}
+.container .container-left .container-input button {
+  border: none;
+  background: rgb(248, 191, 191);
+  background: linear-gradient(135deg, rgb(248, 191, 191) 10%, rgb(238, 140, 140) 70%);
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 14px 38px;
+  position: absolute;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  right: -2px;
+  top: -1px;
+}
+.container .container-left .container-input button:active {
+  background: rgb(248, 191, 191);
+  background: linear-gradient(135deg, rgb(240, 204, 204) 10%, rgb(237, 166, 166) 70%);
+}
+.container .container-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
