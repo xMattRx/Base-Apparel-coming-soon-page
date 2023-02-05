@@ -6,7 +6,14 @@
 }
 
 html {
-    height: 100%;
+
+    @media only screen and (max-width: 1024px) {
+        // overflow: hidden;
+    }
+
+    @media only screen and (max-width: 768px) {
+        overflow: auto;
+    }
 }
 
 body {
@@ -15,6 +22,24 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100%;
+
+    @media only screen and (max-width: 1024px) {
+        // overflow: hidden;
+    }
+}
+
+.logo {
+
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    position: absolute;
+    width: max-content;
+
+    @media only screen and (max-width: 768px) {
+        position: static;
+    }
 }
 
 .container {
@@ -23,9 +48,36 @@ body {
     height: 100%;
     width: 100%;
 
+    @media only screen and (max-width: 1024px) {
+        gap: 100px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        gap: 00px;
+    }
+
     .container-left {
-        padding: 60px 0px 0px 190px;
+        padding: 60px 0px 0px 120px;
         width: max-content;
+
+
+        @media only screen and (max-width: 1024px) {
+            padding: 60px 0px 0px 40px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+            padding: 60px 170px 0px 170px;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 425px) {
+            padding: 60px 20px 0px 20px;
+        }
 
         h1 {
             color: hsl(0, 6%, 24%);
@@ -35,6 +87,15 @@ body {
             max-width: 100px;
             letter-spacing: 18px;
 
+            @media only screen and (max-width: 768px) {
+                margin-top: 0px;
+                max-width: max-content;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 425px) {
+                margin-left: 16px;
+            }
 
             span {
                 color: hsl(0, 27%, 73%);
@@ -49,10 +110,33 @@ body {
             line-height: 25px;
             max-width: 437px;
             margin-bottom: 20px;
+            width: max-content;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 20px;
+                margin-top: 25px;
+                max-width: 355px;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 320px) {
+                margin-bottom: 20px;
+                margin-top: 25px;
+                max-width: 255px;
+                text-align: center;
+            }
         }
+
+
 
         .container-input {
             position: relative;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 80px;
+                margin-top: 25px;
+                width: 100%;
+            }
 
             input {
                 background: transparent;
@@ -68,7 +152,6 @@ body {
                 &::placeholder {
                     color: hsla(0, 52%, 83%, 0.785);
                 }
-
             }
 
             form {
@@ -118,17 +201,20 @@ body {
                 }
             }
         }
-
-
-
-
     }
 
     .container-right {
         display: flex;
         flex-direction: column;
         height: 100%;
+
+        img {
+            height: 100vh;
+            width: 100% !important;
+
+            @media only screen and (max-width: 768px) {
+                height: 100%;
+            }
+        }
     }
-
-
 }

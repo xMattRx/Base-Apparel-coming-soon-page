@@ -5,8 +5,10 @@
   padding: 0;
 }
 
-html {
-  height: 100%;
+@media only screen and (max-width: 768px) {
+  html {
+    overflow: auto;
+  }
 }
 
 body {
@@ -16,6 +18,21 @@ body {
   width: 100%;
   height: 100%;
 }
+.logo {
+  margin-left: 120px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    position: static;
+  }
+}
 
 .container {
   display: flex;
@@ -23,11 +40,42 @@ body {
   height: 100%;
   width: 100%;
 }
+@media only screen and (max-width: 1024px) {
+  .container {
+    gap: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+}
 .container .container-left {
-  padding: 60px 0px 0px 190px;
+  padding: 60px 0px 0px 120px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+@media only screen and (max-width: 1024px) {
+  .container .container-left {
+    padding: 60px 0px 0px 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .container-left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    padding: 60px 170px 0px 170px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container .container-left {
+    padding: 60px 20px 0px 20px;
+  }
 }
 .container .container-left h1 {
   color: hsl(0deg, 6%, 24%);
@@ -36,6 +84,20 @@ body {
   line-height: 55px;
   max-width: 100px;
   letter-spacing: 18px;
+}
+@media only screen and (max-width: 768px) {
+  .container .container-left h1 {
+    margin-top: 0px;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container .container-left h1 {
+    margin-left: 16px;
+  }
 }
 .container .container-left h1 span {
   color: hsl(0deg, 27%, 73%);
@@ -48,9 +110,35 @@ body {
   line-height: 25px;
   max-width: 437px;
   margin-bottom: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media only screen and (max-width: 768px) {
+  .container .container-left p {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    max-width: 355px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container .container-left p {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    max-width: 255px;
+    text-align: center;
+  }
 }
 .container .container-left .container-input {
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .container .container-left .container-input {
+    margin-bottom: 80px;
+    margin-top: 25px;
+    width: 100%;
+  }
 }
 .container .container-left .container-input input {
   background: transparent;
@@ -116,4 +204,13 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.container .container-right img {
+  height: 100vh;
+  width: 100% !important;
+}
+@media only screen and (max-width: 768px) {
+  .container .container-right img {
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
