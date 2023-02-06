@@ -21,12 +21,20 @@ body {
 .logo {
   margin-left: 120px;
   margin-top: 40px;
-  margin-left: 40px;
   margin-bottom: 40px;
   position: absolute;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+
+  
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    margin-left: 40px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .logo {
