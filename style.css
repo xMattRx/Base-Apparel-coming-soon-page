@@ -26,9 +26,6 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-
-  
-
 }
 
 @media only screen and (max-width: 1024px) {
@@ -80,11 +77,7 @@ body {
     width: 100%;
   }
 }
-@media only screen and (max-width: 425px) {
-  .container .container-left {
-    padding: 60px 20px 0px 20px;
-  }
-}
+/* padding: 60px 20px 0px 20px; */
 .container .container-left h1 {
   color: hsl(0deg, 6%, 24%);
   font-size: 50px;
@@ -102,9 +95,15 @@ body {
     text-align: center;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .container .container-left h1 {
     margin-left: 16px;
+  }
+  .container .container-left {
+    padding: 60px 20px 0px 20px;
+  }
+  input{
+    width: 700px;
   }
 }
 .container .container-left h1 span {
